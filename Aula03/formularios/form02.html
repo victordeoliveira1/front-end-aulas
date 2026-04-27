@@ -11,7 +11,35 @@
         <h1>Projeto</h1>
     </header>
     <main>
+        <form action="">
+            <label for="nome"><b>Nome:</b></label><br>
+            <input type="text" id="nome" name="nome"><br>
 
+            <label for="descricao"><b>Descrição: </b></label> <br>
+            <textarea id="descricao" name="descricao" placeholder="Digite a descrição do projeto"
+                style="width: 300px; height: 100px;"></textarea><br>
+
+            <label for="dataInicio"><b>Data Inicial:</b></label><br>
+            <input type="date" id="dataInicio" name="dataInicio"><br>
+
+            <label for="dataconclusao"><b>Data Conclusão:</b></label><br>
+            <input type="date" id="dataconclusao" name="dataconclusao"><br>
+
+            <label for="status"><b>Status</b></label><br>
+            <select name="status" id="status">
+                <option value="ATIVO">Ativo</option>
+                <option value="CONCLUIDO">Concluído</option>
+                <option value="CANCELADO">Cancelado</option>
+            </select><br>
+
+            <label for="responsavelId"><b>Responavel ID:</b></label>
+            <br>
+            <input type="number" name="responsavelId" id="responsavelId"><br><br>
+
+            <input type="reset">
+            <button type="button" onclick="alert('Projeto criado com sucesso!')">Enviar</button>
+            <input type="submit"> 
+        </form>
     </main>
     <footer></footer>
 </body>
