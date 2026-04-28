@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Usuário form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Usuário</h1>
+    </header>
+    <main>
+        <!-- required, selected, readonly, disabled -->
+        <form action="">
+            <label for="nome"><b>Nome:*</b></label><br>
+            <input type="text" id="nome" name="name" placeholder="Digite o nome" value="Nome completo" disabled><br>
+
+            <label for="cpf"><b>CPF:*</b></label><br>
+            <input type="number" id="cpf" name="cpf" placeholder="000.000.000-00" required><br>
+
+            <label for="email"><b>E-mail:*</b></label><br>
+            <input type="email" id="email" name="email" placeholder="email@email.com"><br>
+
+            <label for="dataNascimento"><b>Data de Nascimento:*</b></label><br>
+            <input type="date" id="dataNascimento" name="dataNascimento" placeholder="dd/mm/aaaa"><br>
+
+            <label for="status"><b>Status:*</b></label><br>
+            <select id="status" name="status">
+                <option value="" hidden>Selecione</option>
+                <option value="ATIVO">Ativo</option>
+                <option value="INATIVO">Inativo</option>
+                <option value="BLOQUEADO">Bloqueado</option>
+            </select><br>
+
+            <label for="senha"><b>Senha Temporária:*</b></label><br>
+            <input type="password" id="senha" name="senha" placeholder="Digita sua senha" maxlength="19"><br>
+
+            <br>
+            <input type="reset" value="Reset">
+            <button type="button" onclick="alert('Formulario enviado com sucesso')">Enviar</button>
+            <input type="submit">
+        </form>
+    </main>
+    <footer></footer>
+</body>
+<footer>
+
+</footer>
+
+</html>

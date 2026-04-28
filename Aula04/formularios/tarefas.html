@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarefa form</title>
+    <link rel="stylesheet" href="/Aula04/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Tarefa</h1>
+    </header>
+    <main>
+        <section id="formulario">
+            <form action="">
+
+                <label for="tituloTarefa"><b>Titulo:</b></label><br>
+                <input type="text" id="tituloTarefa" name="tituloTarefa" style="width: 300px;"><br>
+
+                <label for="descricaoTarefa">Descrição:</label><br>
+                <textarea name="descricaoTarefa" id="descricaoTarefa" placeholder="Digite a descrição ta tarefa."
+                    style="width: 300px; height: 100px;"></textarea><br>
+
+                <label for="dtCriacaoTarefa"><b>Data Inicial:</b></label><br>
+                <input type="date" name="dtCriacaoTarefa" id="dtCriacaoTarefa" style="width: 300px;"><br>
+
+                <label for="dtConclusaoTarefa"><b>Data Conclusao:</b></label><br>
+                <input type="date" name="dtConclusaoTarefa" id="dtConclusaoTarefa"><br>
+
+                <label for="prioridadeTarefa"><b>Prioridade da tarefa:</b></label><br>
+                <select name="prioridadeTarefa" id="prioridadeTarefa">
+                    <option value="" hidden>Selecione</option>
+                    <option value="BAIXA">Baixa</option>
+                    <option value="MEDIA">Média</option>
+                    <option value="ALTA">Alta</option>
+                </select><br>
+                <label for="projetoIdTarefa"><b>Projeto ID:</b></label><br>
+                <input type="number" name="projetoIdTarefa" id="projetoIdTarefa"><br>
+                <label for="responsavelTarefa"><b>Usuário ID:</b></label><br>
+                <input type="number" name="responsavelTarefa" id="responsavelTarefa"><br><br>
+
+                <input type="checkbox" id="definirLembrete" name="definirLembrete">
+                <label for="definirLembrete">Definir lembrete</label><br>
+                <input type="reset">
+                <button type="button" onclick="alert('Tarefa criada com sucesso!')">Enviar</button>
+                <input type="submit">
+            </form>
+        </section>
+
+    </main>
+    <footer></footer>
+</body>
+<footer>
+
+</footer>
+
+</html>

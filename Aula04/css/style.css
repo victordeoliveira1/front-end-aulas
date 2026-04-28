@@ -1,0 +1,44 @@
+body {
+    background-color: azure;
+}
+
+h1 {
+    color: red;
+}
+
+#tituloTarefa {
+    border-radius: 10px;
+}
+
+#menu ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+
+}
+#menu li{
+    padding:5px 20px;
+    background-color:gainsboro;
+    margin:0px 5px;
+    border-radius: 15px;
+}
+#menu ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.5s;
+    
+}
+#menu ul li:hover{
+    background-color: black;
+}
+
+#formulario {
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    background-color: gainsboro;
+    border-radius: 15px;
+}
