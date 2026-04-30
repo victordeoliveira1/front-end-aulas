@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto form</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Projeto</h1>
+    </header>
+    <main>
+        <div class="conteiner">
+            <form action="">
+                <label for="nomeProjeto"><b>Nome do projeto:</b></label><br>
+                <input type="text" id="nomeProjeto" name="nomeProjeto"><br>
+
+                <label for="descricaoProjeto"><b>Descrição: </b></label> <br>
+                <textarea id="descricaoProjeto" name="descricaoProjeto" placeholder="Digite a descrição do projeto"
+                    style="width: 300px; height: 100px;"></textarea><br>
+
+
+                <label for="dtCriacaoProjeto"><b>Data Inicial:</b></label>
+                <input type="date" id="dtCriacaoProjeto" name="dtCriacaoProjeto">
+
+                <label for="dtConclusaoProjeto"><b>Data Conclusão:</b></label>
+                <input type="date" id="dtConclusaoProjeto" name="dtConclusaoProjeto"><br>
+
+                <label for="statusProjeto"><b>Status</b></label><br>
+                <select name="statusProjeto" id="statusProjeto">
+                    <option value="" hidden>Selecione</option>
+                    <option value="ATIVO">Ativo</option>
+                    <option value="CONCLUIDO">Concluído</option>
+                    <option value="CANCELADO">Cancelado</option>
+                </select>
+
+                <label for="responsavelIdProjeto"><b>Responsável ID:</b></label>
+                <input type="text" name="responsavelIdProjeto" id="responsavelIdProjeto"><br><br>
+
+                <input type="reset">
+                <button type="submit" id="btnSalvar" onclick="alert('Projeto salvo com sucesso!')">Salvar</button>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+<footer>
+
+</footer>
+
+</html>

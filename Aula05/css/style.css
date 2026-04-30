@@ -1,0 +1,57 @@
+body {
+    background-color: azure;
+}
+
+.menu ul{
+    list-style: none;
+    margin: auto;
+    background-color: aqua;
+}
+.menu li{
+    display: inline;    
+}
+.menu ul li a{
+ padding: 10px 20px;
+ display: inline-block;
+font-size: 18px;
+ color: black;
+ text-decoration: none;
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: bold;
+ border-radius: 10px;
+ background-color: bisque;
+ transition: 0.5s;
+}
+.menu ul li a:hover{
+    background-color: gray;
+    
+}
+.menuSelected{
+    background-color: blue;
+}
+div{
+    background-color: aqua;
+    width: 250px;
+    margin: auto;
+    margin-top: 100px;
+}
+.conteiner{
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    background-color: gainsboro;
+    border-radius: 15px;
+    margin: auto;
+}
+/* .conteiner{
+    background-color: aliceblue;
+    width: 850px;
+    height: 700px;
+    margin: auto;
+} */
+#div01{
+    background-color: blue;
+}
+.div01{
+    background-color: black;
+}
