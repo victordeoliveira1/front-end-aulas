@@ -29,19 +29,19 @@ font-size: 18px;
 .menuSelected{
     background-color: blue;
 }
-div{
+/* div{
     background-color: aqua;
     width: 250px;
     margin: auto;
     margin-top: 100px;
-}
+} */
 .conteiner{
     width: fit-content;
     height: fit-content;
-    padding: 30px;
+  
     background-color: gainsboro;
     border-radius: 15px;
-    margin: auto;
+ 
 }
 /* .conteiner{
     background-color: aliceblue;
