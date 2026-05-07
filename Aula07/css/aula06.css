@@ -1,0 +1,33 @@
+body {
+    height: 300vh;
+}
+div{
+    float: left;
+}
+/* .bloco2 .bloco3{
+    float: right;
+} */
+.bloco1 {
+    width: 1500px;
+    height: 500px;
+    background-color: red;
+    max-width: 60%;
+    
+}
+
+.bloco2 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;    
+    transition: 0.5s;
+}
+.bloco2:hover{
+    background-color: aqua;
+    width: 300px;
+}
+
+.bloco3 {
+    width: 100px;
+    height: 100px;
+    background-color: green;  
+}
