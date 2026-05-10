@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="barraLateral">
+            <span class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </span>
+            <hr style="background-color: white; border: none;height: 2px;">
+            <aside class="menu">
+                <ul>
+                    <li><a class=" menuItem" href="index.html">Dashboard</a></li>
+                    <li><a class="menuItem  active" href="tarefas.html">Tarefas</a></li>
+                    <li><a class="menuItem" href="projetos.html">Projetos</a></li>
+                    <li><a class="menuItem" href="usuarios.html">Usuarios</a></li>
+                </ul>
+            </aside>
+            <div class="btSair">
+                <a href="#" class="menuItem btSair">Sair</a>
+            </div>
+        </div>
+        <div class="geral">
+            <div class="barraSuperior">
+                <nav class="menuSuperior">
+                    <div class="userPerfil card shadow">
+                        <img src="img/avatar.jpg" alt="" class="rounded-circle" width="40">
+                        <b>Victor</b>
+                    </div>
+                </nav>
+                <div class="barraTitulo text-white fw-bold">
+
+                    <h2>Tarefas</h2>
+                </div>
+            </div>
+            <div class="corpo">
+                <div class="container" style="max-width: 620px;">
+
+                    <h2 class="text-black fw-bold mb-4">Adicionar Nova Tarefa</h2>
+
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+                            <form id="formTarefa">
+
+                                <!-- Botão Lista de Tarefas -->
+                                <div class="d-flex justify-content-end mb-3">
+                                    <button type="button" class="btn btn-success">Lista de Tarefas</button>
+                                </div>
+
+                                <!-- Título -->
+                                <div class="mb-3">
+                                    <label for="titulo" class="form-label fw-semibold">Título: <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" id="titulo" name="titulo" class="form-control"
+                                        placeholder="Digite o título da tarefa" />
+                                </div>
+
+                                <!-- Prioridade -->
+                                <div class="mb-3">
+                                    <label for="prioridade" class="form-label fw-semibold">Prioridade: <span
+                                            class="text-danger">*</span></label>
+                                    <select id="prioridade" name="prioridade" class="form-select">
+                                        <option value="" disabled selected>Selecione</option>
+                                        <option value="BAIXA">Baixa</option>
+                                        <option value="MEDIA">Média</option>
+                                        <option value="ALTA">Alta</option>
+                                    </select>
+                                </div>
+
+                                <!-- Responsável -->
+                                <div class="mb-3">
+                                    <label for="responsavel" class="form-label fw-semibold">Responsável: <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" id="responsavel" name="responsavel" class="form-control" />
+                                </div>
+
+                                <!-- Descrição -->
+                                <div class="mb-3">
+                                    <label for="descricao" class="form-label fw-semibold">Descrição:</label>
+                                    <textarea id="descricao" name="descricao" class="form-control"
+                                        placeholder="Descreva a tarefa" rows="4"></textarea>
+                                </div>
+
+                                <!-- Data de criação -->
+                                <div class="mb-3">
+                                    <label for="dataCriacao" class="form-label fw-semibold">Data de criação: <span
+                                            class="text-danger">*</span></label>
+                                    <input type="date" id="dataCriacao" name="dataCriacao" class="form-control" />
+                                </div>
+
+                                <!-- Data de conclusão -->
+                                <div class="mb-3">
+                                    <label for="dataConclusao" class="form-label fw-semibold">Data de conclusão: <span
+                                            class="text-danger">*</span></label>
+                                    <input type="date" id="dataConclusao" name="dataConclusao" class="form-control" />
+                                </div>
+
+                                <!-- Status -->
+                                <div class="mb-3">
+                                    <label for="status" class="form-label fw-semibold">Status: <span
+                                            class="text-danger">*</span></label>
+                                    <select id="status" name="status" class="form-select">
+                                        <option value="" disabled selected>Selecione</option>
+                                        <option value="pendente">Pendente</option>
+                                        <option value="em_andamento">Em andamento</option>
+                                        <option value="concluido">Concluído</option>
+                                        <option value="cancelado">Cancelado</option>
+                                    </select>
+                                </div>
+
+                                <!-- Projeto -->
+                                <div class="mb-3">
+                                    <label for="projeto" class="form-label fw-semibold">Projeto: <span
+                                            class="text-danger">*</span></label>
+                                    <select id="projeto" name="projeto" class="form-select">
+                                        <option value="" disabled selected>Selecione</option>
+                                        <option value="projeto1">Projeto 1</option>
+                                        <option value="projeto2">Projeto 2</option>
+                                        <option value="projeto3">Projeto 3</option>
+                                    </select>
+                                </div>
+
+                                <!-- Definir Lembrete -->
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="lembrete" name="lembrete" />
+                                        <label class="form-check-label fw-semibold" for="lembrete">Definir
+                                            Lembrete</label>
+                                    </div>
+                                </div>
+
+                                <!-- Botões -->
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-success btn-lg">Salvar</button>
+                                    <button type="button" class="btn btn-outline-danger btn-lg">Cancelar</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+</body>
+<footer>
+</footer>
+
+</html>

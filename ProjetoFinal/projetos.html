@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="barraLateral">
+            <span class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </span>
+            <hr style="background-color: white; border: none;height: 2px;">
+            <aside class="menu">
+                <ul>
+                    <li><a class=" menuItem" href="index.html">Dashboard</a></li>
+                    <li><a class="menuItem" href="tarefas.html">Tarefas</a></li>
+                    <li><a class="menuItem active" href="projetos.html">Projetos</a></li>
+                    <li><a class="menuItem" href="usuarios.html">Usuarios</a></li>
+                </ul>
+            </aside>
+            <div class="btSair">
+                <a href="#" class="menuItem btSair">Sair</a>
+            </div>
+        </div>
+        <div class="geral">
+            <div class="barraSuperior">
+                <nav class="menuSuperior">
+                    <div class="userPerfil card shadow">
+                        <img src="img/avatar.jpg" alt="" class="rounded-circle" width="40">
+                        <b>Victor</b>
+                    </div>
+                </nav>
+                <div class="barraTitulo text-white fw-bold">
+                    <h2>Projetos</h2>
+                </div>
+            </div>
+            <div class="corpo">
+
+                <div class="container" style="max-width: 620px;">
+
+                    <h2 class="text-black fw-bold mb-4">Adicionar Novo Projeto</h2>
+
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+                            <form id="formProjeto">
+
+                                <!-- Botão Lista de Projetos -->
+                                <div class="d-flex justify-content-end mb-3">
+                                    <button type="button" class="btn btn-success">Lista de Projetos</button>
+                                </div>
+
+                                <!-- Nome do projeto -->
+                                <div class="mb-3">
+                                    <label for="nomeProjeto" class="form-label fw-semibold">Nome do projeto : <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" id="nomeProjeto" name="nomeProjeto" class="form-control"
+                                        placeholder="Digite o nome do projeto" />
+                                </div>
+
+                                <!-- Descrição -->
+                                <div class="mb-3">
+                                    <label for="descricao" class="form-label fw-semibold">Descrição:</label>
+                                    <textarea id="descricao" name="descricao" class="form-control"
+                                        placeholder="Descreva o projeto" rows="4"></textarea>
+                                </div>
+
+                                <!-- Data de criação + Data de conclusão -->
+                                <div class="row mb-3">
+                                    <div class="col-6">
+                                        <label for="dataCriacao" class="form-label fw-semibold">Data de criação: <span
+                                                class="text-danger">*</span></label>
+                                        <input type="date" id="dataCriacao" name="dataCriacao" class="form-control" />
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="dataConclusao" class="form-label fw-semibold">Data de conclusão:
+                                            <span class="text-danger">*</span></label>
+                                        <input type="date" id="dataConclusao" name="dataConclusao"
+                                            class="form-control" />
+                                    </div>
+                                </div>
+
+                                <!-- Status + Responsável -->
+                                <div class="row mb-4">
+                                    <div class="col-6">
+                                        <label for="status" class="form-label fw-semibold">Status: <span
+                                                class="text-danger">*</span></label>
+                                        <select id="status" name="status" class="form-select">
+                                            <option value="" disabled selected>Selecione</option>
+                                            <option value="ATIVO">Ativo</option>
+                                            <option value="CONCLUIDO">Concluido</option>
+                                            <option value="CANCELADO">Cancelado</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="responsavel" class="form-label fw-semibold">Responsável: <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" id="responsavel" name="responsavel" class="form-control" />
+                                    </div>
+                                </div>
+
+                                <!-- Botões -->
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-success btn-lg">Salvar</button>
+                                    <button type="button" class="btn btn-outline-danger btn-lg">Cancelar</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+</body>
+<footer>
+</footer>
+
+</html>
+
