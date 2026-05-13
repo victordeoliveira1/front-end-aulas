@@ -64,24 +64,25 @@
                                 </div>
 
                                 <!-- Prioridade -->
-                                <div class="mb-3">
-                                    <label for="prioridade" class="form-label fw-semibold">Prioridade: <span
-                                            class="text-danger">*</span></label>
-                                    <select id="prioridade" name="prioridade" class="form-select">
-                                        <option value="" disabled selected>Selecione</option>
-                                        <option value="BAIXA">Baixa</option>
-                                        <option value="MEDIA">Média</option>
-                                        <option value="ALTA">Alta</option>
-                                    </select>
-                                </div>
+                                <div class="row">
+                                    <div class=" col-md-6 mb-3">
+                                        <label for="prioridade" class="form-label fw-semibold">Prioridade: <span
+                                                class="text-danger">*</span></label>
+                                        <select id="prioridade" name="prioridade" class="form-select">
+                                            <option value="" disabled selected>Selecione</option>
+                                            <option value="BAIXA">Baixa</option>
+                                            <option value="MEDIA">Média</option>
+                                            <option value="ALTA">Alta</option>
+                                        </select>
+                                    </div>
 
-                                <!-- Responsável -->
-                                <div class="mb-3">
-                                    <label for="responsavel" class="form-label fw-semibold">Responsável: <span
-                                            class="text-danger">*</span></label>
-                                    <input type="text" id="responsavel" name="responsavel" class="form-control" />
+                                    <!-- Responsável -->
+                                    <div class=" col-md-6 mb-3">
+                                        <label for="responsavel" class="form-label fw-semibold">Responsável: <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" id="responsavel" name="responsavel" class="form-control" />
+                                    </div>
                                 </div>
-
                                 <!-- Descrição -->
                                 <div class="mb-3">
                                     <label for="descricao" class="form-label fw-semibold">Descrição:</label>
@@ -90,44 +91,47 @@
                                 </div>
 
                                 <!-- Data de criação -->
-                                <div class="mb-3">
-                                    <label for="dataCriacao" class="form-label fw-semibold">Data de criação: <span
-                                            class="text-danger">*</span></label>
-                                    <input type="date" id="dataCriacao" name="dataCriacao" class="form-control" />
-                                </div>
+                                <div class="row">
+                                    <div class=" col-md-6 mb-3">
+                                        <label for="dataCriacao" class="form-label fw-semibold">Data de criação: <span
+                                                class="text-danger">*</span></label>
+                                        <input type="date" id="dataCriacao" name="dataCriacao" class="form-control" />
+                                    </div>
 
-                                <!-- Data de conclusão -->
-                                <div class="mb-3">
-                                    <label for="dataConclusao" class="form-label fw-semibold">Data de conclusão: <span
-                                            class="text-danger">*</span></label>
-                                    <input type="date" id="dataConclusao" name="dataConclusao" class="form-control" />
+                                    <!-- Data de conclusão -->
+                                    <div class=" col-md-6 mb-3">
+                                        <label for="dataConclusao" class="form-label fw-semibold">Data de conclusão:
+                                            <span class="text-danger">*</span></label>
+                                        <input type="date" id="dataConclusao" name="dataConclusao"
+                                            class="form-control" />
+                                    </div>
                                 </div>
+                                <div class="row">
+                                    <!-- Status -->
+                                    <div class="col-md-6 mb-3">
+                                        <label for="status" class="form-label fw-semibold">Status: <span
+                                                class="text-danger">*</span></label>
+                                        <select id="status" name="status" class="form-select">
+                                            <option value="" disabled selected>Selecione</option>
+                                            <option value="pendente">Pendente</option>
+                                            <option value="em_andamento">Em andamento</option>
+                                            <option value="concluido">Concluído</option>
+                                            <option value="cancelado">Cancelado</option>
+                                        </select>
+                                    </div>
 
-                                <!-- Status -->
-                                <div class="mb-3">
-                                    <label for="status" class="form-label fw-semibold">Status: <span
-                                            class="text-danger">*</span></label>
-                                    <select id="status" name="status" class="form-select">
-                                        <option value="" disabled selected>Selecione</option>
-                                        <option value="pendente">Pendente</option>
-                                        <option value="em_andamento">Em andamento</option>
-                                        <option value="concluido">Concluído</option>
-                                        <option value="cancelado">Cancelado</option>
-                                    </select>
+                                    <!-- Projeto -->
+                                    <div class="col-md-6 mb-3">
+                                        <label for="projeto" class="form-label fw-semibold">Projeto: <span
+                                                class="text-danger">*</span></label>
+                                        <select id="projeto" name="projeto" class="form-select">
+                                            <option value="" disabled selected>Selecione</option>
+                                            <option value="projeto1">Projeto 1</option>
+                                            <option value="projeto2">Projeto 2</option>
+                                            <option value="projeto3">Projeto 3</option>
+                                        </select>
+                                    </div>
                                 </div>
-
-                                <!-- Projeto -->
-                                <div class="mb-3">
-                                    <label for="projeto" class="form-label fw-semibold">Projeto: <span
-                                            class="text-danger">*</span></label>
-                                    <select id="projeto" name="projeto" class="form-select">
-                                        <option value="" disabled selected>Selecione</option>
-                                        <option value="projeto1">Projeto 1</option>
-                                        <option value="projeto2">Projeto 2</option>
-                                        <option value="projeto3">Projeto 3</option>
-                                    </select>
-                                </div>
-
                                 <!-- Definir Lembrete -->
                                 <div class="mb-4">
                                     <div class="form-check">

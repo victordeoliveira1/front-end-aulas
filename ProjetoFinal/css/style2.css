@@ -1,0 +1,91 @@
+:root {
+    --cor-primaria: #172135;
+    --cor-secundaria: #dfdfdf;
+    --cor-menuSelecionado: #303f73;
+    --cor-menuHover: #3c4e8f;
+    --font-textos: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+.barraLateral {
+    min-height: 100vh;
+    background-color: var(--cor-primaria);
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    padding: 0px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu ul li {
+    display: flex;
+}
+
+.menuItem {
+    background-color: var(--cor-primaria);
+    width: 100%;
+    margin: 2px 0px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.menuItem:hover {
+    background-color: var(--cor-menuHover);
+}
+
+.menu a.active {
+    background-color: var(--cor-menuSelecionado);
+}
+
+
+.geral {
+    height: 100vh;
+    background-color: pink;
+    flex: 1;
+    overflow-y: auto;
+
+}
+
+.barraSuperior {
+    height: 100px;
+    background-color: blue;
+}
+
+.barraTitulo {
+    height: 50px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font: var(--font-textos);
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.conteudo {
+    height: 100vh;
+    background-color: green;
+}
