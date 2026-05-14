@@ -6,9 +6,10 @@
     --font-textos: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
 }
+
 .barraLateral {
     min-height: 100vh;
     background-color: var(--cor-primaria);
@@ -70,12 +71,12 @@ a{
 
 .barraSuperior {
     height: 100px;
-    background-color: blue;
+    background-color:aliceblue;
 }
 
 .barraTitulo {
     height: 50px;
-    background-color: red;
+    background-color:var(--cor-primaria);
     display: flex;
     align-items: center;
     padding-left: 30px;
@@ -87,5 +88,15 @@ a{
 
 .conteudo {
     height: 100vh;
-    background-color: green;
+    background-color: aliceblue;
+}
+
+.dashCards {        
+    height: 200px;
+    padding: 10px;
+}
+.dashCards .card {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }

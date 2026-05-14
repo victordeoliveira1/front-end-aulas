@@ -1,0 +1,19 @@
+/* .box{
+    background-color: aqua;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+.item{
+    width: 100px;
+    height: 80px;
+    background-color: brown;
+} */
+
+.fundo-azul {
+    background-color: blue;
+}
+
+.fundo-vermelho {
+    background-color: red;
+}
