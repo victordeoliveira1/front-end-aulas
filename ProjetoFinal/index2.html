@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style2.css">
+
 </head>
 
 <body>
@@ -17,83 +18,123 @@
 
         <!-- Linha geral -->
         <div class="row">
-
+            <!-- INICIO DA ESTRUTURA BASE -->
             <!-- Barra lateral -->
-            <div class="barraLateral col-2 col-md-2">
+            <div class="barraLateral col-4 col-md-2">
                 <div class="logo">
                     <img src="img/logo.png" alt="">
                 </div>
-                <hr>
+                <hr style="background-color: white; border: none;height: 2px;">
+
                 <!-- Menu -->
                 <div class="menu">
                     <ul>
-                        <li><a class="menuItem active" href="#">Dashboard</a></li>
-                        <li><a class="menuItem" href="#">Tarefas</a></li>
-                        <li><a class="menuItem" href="#">Projetos</a></li>
-                        <li><a class="menuItem" href="#">Usuarios</a></li>
+                        <li><a class="menuItem active" href="#">
+                                <span class="material-icons">dashboard</span>
+                                Dashboard
+                            </a>
+
+                        </li>
+                        <li><a class="menuItem" href="#">
+                                <span class="material-icons">task</span>
+                                Tarefas
+                            </a></li>
+                        <li><a class=" menuItem" href="#">
+                                <span class="material-icons">folder</span>
+                                Projetos
+                            </a>
+                        </li>
+                        <li><a class="menuItem" href="#">
+                                <span class="material-icons">person</span>
+                                Usuarios
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
 
             <!-- Segunda coluna -->
-            <div class="geral col-12 col-md-10">
+            <div class="geral col-8 col-md-10">
 
                 <!-- Barra superior -->
-                <div class="row">
-                    <div class="barraSuperior col-md-12">
-                        conteúdo
+                <div class="row barraSuperior">
+                    <div class="row barraPerfil mx-0">
+                        <div class="col-5 col-sm-6 col-md-8 col-lg-10">
+                        </div>
+                        <div class="col-7 col-sm-6 col-md-4 col-lg-2 d-flex">
+                            <div class="userPerfil card shadow">
+                                <button class="btn">
+                                    <span class="material-icons" style="font-size: 24px;margin-top: 3px; ">
+                                        notifications_none
+                                    </span>
+                                </button>
+                                <img src="img/avatar.jpg" alt="" class="rounded-circle" width="40" height="40">
+                                <b>Victor</b>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- título da página -->
+                    <div class="row mx-0">
+                        <div class="barraTitulo col-md-12">
+                            <span class="material-icons">dashboard</span>
+                            Dashboard
+                        </div>
+                    </div>
+
                 </div>
 
-                <!-- título da página -->
-                <div class="row">
-                    <div class="barraTitulo col-md-12">
-                        conteúdo
-                    </div>
-                </div>
+                <!-- FIM DA ESTRUTURA BASE -->
 
                 <!-- Conteúdo principal -->
                 <div class="row">
                     <div class="conteudo col-md-12">
 
                         <!-- row cards dashboard -->
-                        <div class="row">
+                        <div class="row mx-0">
+                            <!-- Projetos Concluídos -->
                             <div class=" dashCards col-md-3">
-                                <div class="card shadow btn-success">
-                                    <span class="material-symbols-outlined" style="font-size: 48px;">
-                                        home
-                                    </span>
-                                    <p>Card 1</p>
-                                    <p>conteudo</p>
+                                <div class="card shadow bg-success">
+                                    <span class="material-icons text">task_alt</span>
+                                    <h2>0</h2>
+                                    <h5 class="card-title">Projetos Concluídos</h5>
                                 </div>
                             </div>
+                            <!-- Projetos Em Andamento -->
                             <div class=" dashCards col-md-3">
-                                <div class="card shadow">
-                                    <p>Card 2</p>
+                                <div class="card shadow bg-info">
+                                    <span class="material-icons">access_time</span>
+                                    <h2>0</h2>
+                                    <h5 class="card-title">Em Andamento</h5>
                                 </div>
                             </div>
-                            <div class=" dashCards col-md-3">
-                                <div class="card shadow">
-                                    <p>Card 3</p>
+                            <!-- Projetos Pendentes -->
+                            <div class=" dashCards col-md-3 ">
+                                <div class="card shadow bg-warning">
+                                    <span class="material-icons">warning_amber</span>
+                                    <h2>0</h2>
+                                    <h5 class="card-title">Pendentes</h5>
                                 </div>
                             </div>
-                            <div class=" dashCards col-md-3">
-                                <div class="card shadow">
-                                    <p>Card 4</p>
+                            <!-- Projetos Cancelados -->
+                            <div class=" dashCards col-md-3 ">
+                                <div class="card shadow bg-danger">
+                                    <span class="material-icons ">cancel</span>
+                                    <h2>0</h2>
+                                    <h5 class="card-title">Cancelados</h5>
                                 </div>
                             </div>
-                        </div>
 
+                        </div>
+                        <!-- Fim row cards dashboard -->
                     </div>
 
-
-
                 </div>
+                <!-- Fim conteúdo principal -->
             </div>
+            <!-- Fim segunda coluna -->
         </div>
-    </div>
-    </div>
-
+        <!-- Fim linha geral -->
     </div>
 
     <script src=" js/bootstrap.js">
